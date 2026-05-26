@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Resmi Desa Tambakboyo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="ticker">
+        <marquee>BERITA TERKINI:DIKABARKAN!! Dalam waktu dekat ini tepatnya pada Tanggal 27 Mei 2026, Desa Tambakboyo akan mengadakan kegiatan Qurban Idul Adha di Masjid Al-Fadhillah. Dengan hewan Qurban berupa Sapi, Kambing, Unta | Selamat datang di website resmi Desa Tambakboyo Pedan.</marquee>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo-text">
+            <img src="assets/img/LOGO.png" alt="Logo Desa Tambakboyo" style="height: 70px; width: auto; display: block;">
+        </a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="umkm.html">UMKM</a></li>
+            <li><a href="unduhan.html">Unduhan</a></li>
+        </ul>
+        <img src="assets/img/logo-pedan.png" alt="Logo Pedan" class="logo-instansi" onerror="this.style.display='none'">
+    </nav>
+
+    <header class="hero searchable">
+        <div class="hero-content">
+            <p>Selamat Datang di Portal Resmi</p>
+            <h1>DESA TAMBAKBOYO PEDAN</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari layanan, data, atau info...">
+                <button type="button" onclick="searchContent()">Cari</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="section-header searchable">
+            <h2>Layanan Publik Utama</h2>
+            <p>Akses cepat ke berbagai layanan administrasi dan informasi kelurahan.</p>
+        </div>
+        
+        <div class="grid-services">
+            <a href="https://wa.me/6289509466884?text=Halo%20Admin,%20saya%20ingin%20mengajukan%20laporan." target="_blank" class="service-card searchable">
+                <div class="icon-wrapper"><i class="fa-solid fa-bullhorn"></i></div>
+                <h4>Laporan Warga Desa</h4>
+                <p>Aspirasi via WhatsApp</p>
+            </a>
+            
+            <a href="#bagian-statistik" onclick="triggerHighlight()" class="service-card searchable">
+                <div class="icon-wrapper"><i class="fa-solid fa-chart-pie"></i></div>
+                <h4>Data Desa</h4>
+                <p>Statistik Desa</p>
+            </a>
+
+            <a href="umkm.html" class="service-card searchable">
+                <div class="icon-wrapper"><i class="fa-solid fa-store"></i></div>
+                <h4>UMKM Lokal</h4>
+                <p>Katalog Produk Unggulan</p>
+            </a>
+
+            <a href="Surat/surat-online-info.pdf" class="service-card searchable">
+                <div class="icon-wrapper"><i class="fa-solid fa-file-invoice"></i></div>
+                <h4>Surat Online</h4>
+                <p>Download Berkas Mandiri</p>
+            </a>
+        </div> 
+        <div id="bagian-statistik" class="info-card searchable">
+            <div class="card-header">
+                <h3><i class="fa-solid fa-chart-bar"></i> Statistik Desa</h3>
+            </div>
+            <div class="stat-row">
+                <span>Penyaluran BLT <span>81%</span></span>
+                <div class="bar-bg"><div class="bar-fill" style="width: 81%; background: #02f606;"></div></div>
+            </div>
+            <div class="stat-row">
+                <span>Pembangunan Infrastruktur <span>68%</span></span>
+                <div class="bar-bg"><div class="bar-fill" style="width: 68%; background: #f59e0b;"></div></div>
+            </div>
+            <div class="stat-row">
+                <span>Layanan Kesehatan <span>95%</span></span>
+                <div class="bar-bg"><div class="bar-fill" style="width: 95%; background: #c00202;"></div></div>
+            </div>
+            <a href="Surat/laporan_statistik_tambakboyo.pdf" download="Laporan_Statistik_Desa_Tambakboyo.pdf" class="btn-download">
+                Download Laporan Lengkap
+            </a>
+        </div>
+
+        <div class="info-card searchable">
+            <div class="card-header">
+                <h3><i class="fa-solid fa-map-location-dot"></i> Peta Wilayah</h3>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.5786529683615!2d110.69327827476566!3d-7.693503192336338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a462886c990b7%3A0x4632b71286c0780c!2sTambakboyo%2C%20Kec.%20Pedan%2C%20Kabupaten%20Klaten%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1716280000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Pemerintah Desa Tambakboyo Pedan. Built by JULIO PPLG SMKN 2 Klaten.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
